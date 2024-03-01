@@ -1,4 +1,4 @@
-package com.raven.swing.scroll;
+package com.nobre.caixa.scroll;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

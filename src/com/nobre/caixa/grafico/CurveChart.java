@@ -1,8 +1,8 @@
 package com.nobre.caixa.grafico;
 
-import com.raven.chart.blankchart.BlankPlotChart;
-import com.raven.chart.blankchart.BlankPlotChatRender;
-import com.raven.chart.blankchart.SeriesSize;
+import com.nobre.caixa.blankchart.BlankPlotChart;
+import com.nobre.caixa.blankchart.BlankPlotChatRender;
+import com.nobre.caixa.blankchart.SeriesSize;
 import java.awt.AlphaComposite;
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -141,7 +141,7 @@ public class CurveChart extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        blankPlotChart = new com.raven.chart.blankchart.BlankPlotChart();
+        blankPlotChart = new com.nobre.caixa.blankchart.BlankPlotChart();
         panelLegend = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -172,7 +172,7 @@ public class CurveChart extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.raven.chart.blankchart.BlankPlotChart blankPlotChart;
+    private com.nobre.caixa.blankchart.BlankPlotChart blankPlotChart;
     private javax.swing.JPanel panelLegend;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,7 +3,7 @@ package com.nobre.caixa.componentes;
 import com.nobre.caixa.evento.MenuEvento;
 import com.nobre.caixa.swing.MenuBotao;
 import com.nobre.caixa.swing.Separador;
-import com.raven.swing.scroll.BarraDeRolagemPersonalizada;
+import com.nobre.caixa.scroll.BarraDeRolagemPersonalizada;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.ActionEvent;

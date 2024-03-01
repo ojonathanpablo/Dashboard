@@ -1,6 +1,6 @@
 package com.nobre.caixa.swing;
 
-import com.raven.swing.scroll.BarraDeRolagemPersonalizada;
+import com.nobre.caixa.scroll.BarraDeRolagemPersonalizada;
 import com.raven.table.TableCustom;
 import java.awt.Color;
 import java.awt.Component;

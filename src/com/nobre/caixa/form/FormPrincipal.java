@@ -1,7 +1,11 @@
 package com.nobre.caixa.form;
 
+import com.nobre.caixa.celula.CelulaNome;
 import com.nobre.caixa.grafico.GraficoModelo;
+import com.nobre.caixa.model.ModelEquipe;
+import com.nobre.caixa.model.ModelPessoa;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 public class FormPrincipal extends javax.swing.JPanel {
 
@@ -9,7 +13,8 @@ public class FormPrincipal extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
         tabela1.addEstilo(rolagem);
-         init();
+        init();
+        initTabela();
     }
 
     @SuppressWarnings("unchecked")
@@ -45,22 +50,7 @@ public class FormPrincipal extends javax.swing.JPanel {
 
         tabela1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Jonathan", "8888888888", "email@gmail.com", "123"},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
                 "Nome", "Telefone", "Email", "DRT"
@@ -71,6 +61,7 @@ public class FormPrincipal extends javax.swing.JPanel {
         rolagem.setViewportView(tabela1);
         if (tabela1.getColumnModel().getColumnCount() > 0) {
             tabela1.getColumnModel().getColumn(0).setResizable(false);
+            tabela1.getColumnModel().getColumn(0).setPreferredWidth(200);
             tabela1.getColumnModel().getColumn(1).setResizable(false);
             tabela1.getColumnModel().getColumn(2).setResizable(false);
             tabela1.getColumnModel().getColumn(3).setResizable(false);
@@ -136,8 +127,17 @@ public class FormPrincipal extends javax.swing.JPanel {
         grafico.start();
     }
 
+    private void initTabela() {
+        tabela1.addTableCell(new CelulaNome(), 0);
+        ImageIcon img = new ImageIcon(getClass().getResource("/com/nobre/caixa/icon/profile.jpg"));
+        ModelPessoa pessoa = new ModelPessoa("Jonh", "Pablo", img, "");
+        ModelEquipe equipe = new ModelEquipe(pessoa, "Masculino", 18, "jp@gmail", "99 99999");
+        tabela1.addRow(equipe, false);
+        tabela1.addRow(equipe, false);
+        tabela1.addRow(equipe, false);
+        tabela1.addRow(equipe, false);
+       // tabela1.editRowAt(3);
 
-
-
+    }
 
 }
